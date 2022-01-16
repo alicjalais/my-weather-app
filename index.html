@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather app</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/8b98640852.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="src/styles.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+          <form class="d-flex" id="search-form">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="City name"
+              aria-label="Search"
+              id="search-input"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </nav>
+      <button type="button" class="btn btn-success">Current</button>
+      <div class="current-city">
+        <span class="city-name" id="city">Lisbon</span>
+        <span class="day" id="current-day"></span>
+        <span class="weather">Clouds</span>
+
+        <span class="temp"
+          ><span id="actual-temp" class="celsius-temp">12 </span
+          ><a href="#" id="celsius-link">°C</a> |
+          <a href="#" id="fahrenheit-link">°F </a></span
+        >
+      </div>
+      <div class="row wind-precipitation">
+        <div class="col-12">
+          <strong>Wind</strong>: <span id="speed">5</span>km/h
+        </div>
+        <div class="col-12">
+          <strong>Humidity</strong>: <span id="humidity">76</span>%
+        </div>
+      </div>
+    </div>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>

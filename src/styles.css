@@ -1,0 +1,86 @@
+body {
+  font-family: sans-serif;
+}
+.cities {
+  display: flex;
+  padding: 10px 20px;
+  justify-content: space-evenly;
+}
+.btn-success {
+  display: inline;
+  margin: 15px;
+}
+.city-name {
+  display: block;
+  font-size: 32px;
+  margin: 10px;
+}
+.day {
+  display: block;
+  font-size: 20px;
+  margin: 5px;
+  position: relative;
+  left: 6px;
+}
+.temp {
+  display: block;
+  position: relative;
+  left: 15px;
+  font-size: 18px;
+}
+.weather {
+  font-size: 18px;
+  position: relative;
+  left: 15px;
+}
+.fa-cloud {
+  position: relative;
+  left: 20px;
+  font-size: 24px;
+  color: #bbcff0;
+}
+.wind-precipitation {
+  position: relative;
+  left: 400px;
+  bottom: 100px;
+}
+.fa-cloud-sun {
+  display: block;
+  font-size: 32px;
+  color: #73f0bc;
+}
+.fa-cloud-sun-rain {
+  display: block;
+  font-size: 32px;
+  color: #697191;
+}
+.fa-sun {
+  display: block;
+  font-size: 32px;
+  color: #edc453;
+}
+.fa-cloud-showers-heavy {
+  display: block;
+  font-size: 32px;
+  color: #878170;
+}
+.fa-cloud-rain {
+  display: block;
+  font-size: 32px;
+  color: #4582cc;
+}
+.btn-outline-success:hover {
+  background-color: #4582cc;
+  border-color: #4582cc;
+}
+.btn-outline-success {
+  border-color: #4582cc;
+  transition: 200 ms ease-in-out;
+  color: #0755b5;
+}
+.city {
+  border: 1px solid #4582cc;
+  flex: 0;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
